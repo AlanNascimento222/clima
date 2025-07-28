@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+
+    <!-- font Poppings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- links -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/image/iconTitle.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaX</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" name="search" id="searcBox" placeholder="Pesquise uma cidade">
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div id="container2">
+            <div id="weather">
+                <div id="temp_now">
+                    <img id="weather_icon" src="" alt="">
+                    <h3 id="weather_description">Ensolarado</h3>
+                    <h3 id="temp">22°c</h3>
+                </div>
+                <div id="location">
+                    <h1 id="nome_cidade">São Paulo</h1>
+                    <h2 id="nome_estado">São Paulo</h2>
+                </div>
+            </div>
+            <div id="infos">
+                <div id="temp_max">
+                    <i id="temp_max_icon" class="fa-solid fa-temperature-arrow-up"></i>
+                    <h3>32°c</h3>
+                </div>
+                <div id="temp_min">
+                    <i id="temp_min_icon" class="fa-solid fa-temperature-arrow-down"></i>
+                    <h3>32°c</h3>
+                </div>
+                <div id="vent_vel">
+                    <i class="fa-solid fa-wind"></i>
+                    <h3>40km/h</h3>
+                </div>
+                <div id="umidade">
+                    <i class="fa-solid fa-water"></i>
+                    <h3>66%</h3>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
