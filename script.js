@@ -4,7 +4,7 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
 
 
     const cityName = document.querySelector('#city_name').value
-    const apiKey = "da4d5ba88443ac271c1966ee14d4afbb"
+    const apiKey = "a0a859dd4a6cd9867c30e36f44331540"
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(cityName)}&appid=${apiKey}&units=metric&lang=pt_br`
     const results = await fetch(apiUrl);
     const json = await results.json();
@@ -12,7 +12,7 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
 
 
     if (json.cod != 200){
-        showAlert(`${cityName} não retornou nada`)
+        showAlert(`Não foi possivel concluir a ação`)
     } else {
         console.log(json)
         showJsonInfos({
@@ -29,7 +29,7 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
     }
 
     if(!cityName) {
-        return showAlert(`digite uma cidade válida nome da cidade=${cityName}.`)
+        return showAlert(`digite uma cidade válida.`)
     }
 
 })
@@ -51,3 +51,6 @@ function showJsonInfos(json) {
     document.querySelector('#humidityDesc').innerHTML = `${json.humidity}%`
     document.querySelector('#weatherIcon').setAttribute('src', `https://openweathermap.org/img/wn/${json.weatherIcon}@2x.png`)
 }
+
+// refazer com o Open Meteo
+// geocoding pra requisitar
