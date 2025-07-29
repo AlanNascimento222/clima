@@ -43,4 +43,5 @@ function showAlert(msg) {
 function showJsonInfos(json) {
     showAlert('')
     document.querySelector('#cityName').innerHTML = `${json.city}, ${json.country}`
-    document.querySelector('#weatherIcon').setAttribute('src', ``)
+    // document.querySelector('#weatherIcon').setAttribute('src', ``)
+}
