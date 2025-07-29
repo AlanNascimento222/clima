@@ -32,7 +32,6 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
         return showAlert(`digite uma cidade válida nome da cidade=${cityName}.`)
     }
 
-
 })
 
 
@@ -42,6 +41,13 @@ function showAlert(msg) {
 
 function showJsonInfos(json) {
     showAlert('')
+    document.querySelector('#weatherContainer').style.display = 'flex'
     document.querySelector('#cityName').innerHTML = `${json.city}, ${json.country}`
-    // document.querySelector('#weatherIcon').setAttribute('src', ``)
+    document.querySelector('#currentTemp').innerHTML = `${json.temp.toFixed(0)}°C`
+    document.querySelector('#weatherDescription').innerHTML = `${json.description}`
+    document.querySelector('#maxTempDesc').innerHTML = `${json.tempMax.toFixed(0)}°C`
+    document.querySelector('#minTempDesc').innerHTML = `${json.tempMin.toFixed(0)}°C`
+    document.querySelector('#windSpeedDesc').innerHTML = `${json.windSpeed.toFixed(0)}km/h`
+    document.querySelector('#humidityDesc').innerHTML = `${json.humidity}%`
+    document.querySelector('#weatherIcon').setAttribute('src', `https://openweathermap.org/img/wn/${json.weatherIcon}@2x.png`)
 }

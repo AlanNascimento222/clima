@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+    gap: 3vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +51,7 @@ body {
 }
 
 #weatherContainer {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -165,4 +166,8 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+.show {
+    display: flex;
 }
