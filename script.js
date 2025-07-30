@@ -54,3 +54,4 @@ function showJsonInfos(json) {
 
 // refazer com o Open Meteo
 // geocoding pra requisitar
+// fazer conta na vercel
