@@ -51,7 +51,3 @@ function showJsonInfos(json) {
     document.querySelector('#humidityDesc').innerHTML = `${json.humidity}%`
     document.querySelector('#weatherIcon').setAttribute('src', `https://openweathermap.org/img/wn/${json.weatherIcon}@2x.png`)
 }
-
-// refazer com o Open Meteo
-// geocoding pra requisitar
-// fazer conta na vercel
